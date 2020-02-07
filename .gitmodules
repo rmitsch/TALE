@@ -1,0 +1,6 @@
+[submodule "TALE-frontend"]
+	path = TALE-frontend
+	url = git@github.com:rmitsch/TALE-frontend.git
+[submodule "TALE-backend"]
+	path = TALE-backend
+	url = git@github.com:rmitsch/TALE-backend.git
