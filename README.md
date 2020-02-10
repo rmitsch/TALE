@@ -14,4 +14,4 @@ Alternatively pull the image from Dockerhub:
 
 ### Run data generation
 
-`docker run -v [host data directory]:/data tale python /TALE-backend/source/generate_data.py [dataset name] [DR kernel name] /data`
+`docker run -v [host data directory]:/data tale python /TALE-backend/source/generate_data.py [dataset name] [DR kernel name] /data`    
