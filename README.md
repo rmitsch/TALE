@@ -4,8 +4,8 @@ TALE is a **T**ool for **A**nnotation of **L**ow-dimensional **E**mbeddings. It 
 
 Head over to https://github.com/rmitsch/TALE-backend and https://github.com/rmitsch/TALE-frontend to see the actual source code.
 
-![TALE: Global view](https://github.com/rmitsch/TALE/doc/tale_global)
-![TALE: Local view](https://github.com/rmitsch/TALE/doc/tale_local.png)
+![TALE: Global view](https://github.com/rmitsch/TALE/blob/master/doc/tale_global.png)
+![TALE: Local view](https://github.com/rmitsch/TALE/blob/master/doc/tale_local.png)
 
 ## Build Instructions
 
