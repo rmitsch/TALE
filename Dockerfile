@@ -18,11 +18,11 @@ COPY setup/base.py /tmp/base.py
 ENV PATH /opt/conda/envs/tale/bin:$PATH
 RUN apt-get update && \
     # Install system dependencies.
-    apt-get -y --no-install-recommends install gcc g++ apt-utils make cmake nano && \
+ 	apt-get -y --no-install-recommends install gcc g++ apt-utils make cmake nano && \
     # Install conda/pip depencencies; configure default environment.
-    conda env create -f /tmp/environment.yml && \
+	conda env create -f /tmp/environment.yml && \
     # Execute additional setup.
-    chmod +x /tmp/setup.sh && sync && ./tmp/setup.sh
+	chmod +x /tmp/setup.sh && sync && ./tmp/setup.sh
 
 ##########################################
 # 3. Copy code.
