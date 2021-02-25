@@ -25,7 +25,8 @@ Alternatively pull the image from Dockerhub:
 
 ## Run TALE server
 
-`docker run -p 2484:2484 -v [host data directory]:/data tale python /TALE-backend/source/app.py /TALE-frontend /data [experiment name] [Dropbox OAuth $
+`docker run -p 2484:2484 -v [host data directory]:/data tale python /TALE-backend/source/app.py /TALE-frontend /data [experiment name] [Dropbox OAuth Token]`
+
 [experiment name] and [Dropbox OAuth Token] are optional and only necessary if you want to hook up TALE to a Dropbox account to automatically store the resulting user ratings in the cloud.
 
 ## Use TALE
