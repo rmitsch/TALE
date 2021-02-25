@@ -13,13 +13,11 @@ Individual projections can be inspected, evaluated and rated in the local view:
 
 ## Build Instructions
 
-Pull source code:
+* Pull source code:
 `git clone --recurse-submodules git@github.com:rmitsch/TALE.git`
-
-Build the Docker image:
+* Build the Docker image:
 `docker build -t tale -f Dockerfile .`
-
-Alternatively pull the image from Dockerhub:
+* Alternatively pull the image from Dockerhub:
 `docker pull rmitsch/tale`
 
 ## Generate projections
@@ -30,7 +28,7 @@ Alternatively pull the image from Dockerhub:
 
 `docker run -p 2484:2484 -v [host data directory]:/data tale python /TALE-backend/source/app.py /TALE-frontend /data [experiment name] [Dropbox OAuth Token]`
 
-[experiment name] and [Dropbox OAuth Token] are optional and only necessary if you want to hook up TALE to a Dropbox account to automatically store the resulting user ratings in the cloud.
+`[experiment name]` and `[Dropbox OAuth Token]` are optional and only necessary if you want to hook up TALE to a Dropbox account to automatically store the resulting user ratings in the cloud.
 
 ## Use TALE
 
