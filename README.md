@@ -13,10 +13,13 @@ Individual projections can be inspected, evaluated and rated in the local view:
 
 ## Build Instructions
 
+Pull source code:
+`git clone --recurse-submodules git@github.com:rmitsch/TALE.git`
+
+Build the Docker image:
 `docker build -t tale -f Dockerfile .`
 
 Alternatively pull the image from Dockerhub:
-
 `docker pull rmitsch/tale`
 
 ## Generate projections
