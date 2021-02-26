@@ -38,4 +38,4 @@ Individual projections can be inspected, evaluated and rated in the local view:
 Access in your browser via localhost:2484.
 
 Note: By default, TALE attempts to load t-SNE projections for the world happiness dataset, i. e. assumes that projections have been generated with 
-`docker run -v [host data directory]:/data tale python /TALE-backend/source/generate_data.py happiness TSNE /data`. If you generated or want to look at another configuration, select it in the dataset and DR kernel dropdowns to the top right and click the load button to their right.
+`docker run -v [host data directory]:/data tale python /TALE-backend/source/generate_data.py happiness TSNE /data`. If you want to look at another configuration, select it in the dataset and DR kernel dropdowns to the top right and click the load button to their right.
