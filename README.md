@@ -24,6 +24,9 @@ Individual projections can be inspected, evaluated and rated in the local view:
 
 `docker run -v [host data directory]:/data tale python /TALE-backend/source/generate_data.py [dataset name] [DR kernel name] /data`    
 
+`[dataset name]` can be either "happiness" for the UN world happiness study or "movie" for the IMDB movie dataset.
+`[DR kernel name]` can be "UMAP", "TSNE" or "SVD".
+
 ## Run TALE server
 
 `docker run -p 2484:2484 -v [host data directory]:/data tale python /TALE-backend/source/app.py /TALE-frontend /data [experiment name] [Dropbox OAuth Token]`
@@ -33,3 +36,6 @@ Individual projections can be inspected, evaluated and rated in the local view:
 ## Use TALE
 
 Access in your browser via localhost:2484.
+
+Note: By default, TALE attempts to load t-SNE projections for the world happiness dataset, i. e. assumes that projections have been generated with 
+`docker run -v [host data directory]:/data tale python /TALE-backend/source/generate_data.py happiness TSNE /data`. If you generated or want to look at another configuration, select it in the dataset and DR kernel dropdowns to the top right and click the load button to their right.
