@@ -25,14 +25,16 @@ RUN apt-get update && \
     chmod +x /tmp/setup.sh && sync && ./tmp/setup.sh
 
 ##########################################
-# 3. Copy code.
+# 3. Copy code and data.
 ##########################################
 
 COPY TALE-backend /TALE-backend
 COPY TALE-frontend /TALE-frontend
+RUN tar -C /TALE-backend/raw_data -zxvf /TALE-backend/raw_data/archive.tar.gz && \
+    rm /TALE-backend/raw_data/archive.tar.gz
 
 ##########################################
-# 3. Launch server.
+# 4. Launch server.
 ##########################################
 
 # Expose and launch only if this is supposed to run frontend.
