@@ -5,7 +5,7 @@ This repository contains the [dataset with projection features and user ratings]
 
 Head over to https://github.com/rmitsch/TALE-backend and https://github.com/rmitsch/TALE-frontend for the actual source code.
 
-It allows to explore the parameter space of low-dimensional projections in the global view:
+TALE allows to explore the parameter space of low-dimensional projections in the global view:
 ![TALE: Global view](https://github.com/rmitsch/TALE/blob/master/doc/tale_global.png)
 
 Individual projections can be inspected, evaluated and rated in the local view:
